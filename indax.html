@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/styl.css">
+</head>
+
+<body>
+
+    <div class="crud">
+        <div class="had">
+            <h2>cruds</h2>
+            <p>product managment system</p>
+
+
+
+        </div>
+        <div class="inputs">
+            <input type="text" name="" id="titl" placeholder="title">
+            <div class="pric">
+                <input onkeyup="gettotl()" type="number" name="" id="pric" placeholder="price">
+                <input onkeyup="gettotl()" type="number" name="" id="texs" placeholder="taxes">
+                <input onkeyup="gettotl()" type="number" name="" id="ads" placeholder="ads">
+                <input onkeyup="gettotl()" type="number" name="" id="discount" placeholder="discount">
+                <small id="totl"></small>
+            </div>
+            <input type="number" name="" id="count" placeholder="count">
+            <input type="text" name="" id="catgr" placeholder="category">
+            <button id="submit">create</button>
+
+        </div>
+        <div class="outputs">
+            <div class="serchblok">
+                <input onkeyup="searchdata(this.value)" type="text" name="" id="serch" placeholder="search">
+                <div class="btnserch">
+                    <button onclick=" getsearcchmod(this.id)" id="searchtitl">search by title</button>
+                    <button onclick=" getsearcchmod(this.id)" id="searchcategory">search by category</button>
+                </div>
+            </div>
+        </div>
+        <div id="dletall"></div>
+        <table>
+            <tr>
+                <th>id</th>
+                <th>title</th>
+                <th>price</th>
+                <th>taxes</th>
+                <th>ads</th>
+                <th>discount</th>
+                <th>total</th>
+                <th>category</th>
+                <th>update</th>
+                <th>delete</th>
+            </tr>
+            <tbody id="tdoby">
+                <!-- <tr>
+                    <td>1</td>
+                    <td>samsing</td>
+                    <td>200</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>230</td>
+                    <td>phon</td>
+                    <td><button id="update">update</button></td>
+                    <td><button id="delete">delete</button></td>
+                </tr> -->
+            </tbody>
+        </table>
+
+
+
+    </div>
+
+
+
+
+    <!-- `<tr>
+        <td> ${i}</td >
+    <td>${datapro[i].titl}</td>
+   <td>${datapro[i].pric}</td>
+    <td>${datapro[i].titl}</td>
+    <td>${datapro[i].texs}</td>
+    <td>${datapro[i].ads}</td>
+    <td>${datapro[i].discount}</td>
+    <td>${datapro[i].totl}</td>
+    <td>${datapro[i].catgr}</td>
+    <td><button id="update">update</button></td>
+    <td><button id="delete">delete</button></td>
+
+</tr > ` -->
+
+
+
+
+
+
+
+
+
+    <script src="min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgba(34, 34, 34, 0.959);
+    color: #fff;
+    font-family: sans-serif;
+}
+.crud{
+    width: 80%;
+    margin: auto;
+}
+.had{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+
+}
+#dletall{
+    margin: 20px 0;
+}
+input{
+    width: 100%;height: 30px;
+outline: none;
+border: none;
+background: rgba(9, 77, 94, 0.911);
+margin: 4px 0;
+border-radius: 5px;
+padding: 5px;
+color: #fff;
+}
+input:focus{
+    background: rgb(6, 43, 53);
+    transform: scale(1.08);
+}
+.pric input{
+    width: 20%;
+}
+#totl{
+    background: rgba(187, 53, 53, 0.87);
+    padding: 5px 2px;
+    border-radius: 4px;
+}
+#totl::before{
+content: 'Total';
+}
+button{
+    width: 100%;
+    height: 30px;
+   
+    border: none;
+    cursor: pointer;
+    background: rgba(5, 46, 100, 0.945);
+    color: #fff;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+button:hover{
+    background: rgba(31, 81, 148, 0.945);
+    letter-spacing: 1.4px;
+    font-size: 18px;
+}
+.btnserch{
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+.btnserch button{
+    width: 45%;
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+
+}
+table th{
+    text-transform: uppercase;
+}
+th,td{
+    padding: 5px;
+}
